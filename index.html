@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Dino 速览</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 简单的内敛 CSS，保持页面居中并美化按钮 -->
+    <style>
+        body {
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            background:#f7f7f7;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            margin:0;
+        }
+        h1 {
+            margin-bottom: 1.5rem;
+            color:#333;
+        }
+        .btn-group {
+            display:flex;
+            flex-direction:column;
+            gap:0.8rem;
+        }
+        .btn {
+            display:inline-block;
+            padding:0.8rem 1.6rem;
+            font-size:1rem;
+            color:#fff;
+            background:#4285f4;
+            border:none;
+            border-radius:4px;
+            text-decoration:none;
+            text-align:center;
+            transition:background 0.2s;
+        }
+        .btn:hover {
+            background:#3367d6;
+        }
+        .btn:active {
+            background:#2a56c6;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Google Dino</h1>
+
+<div class="btn-group">
+    <!-- 1️⃣ 下载 Android 包 -->
+    <a class="btn" href="../android/google-dino.apk" download>下载 Android 包</a>
+
+    <!-- 2️⃣ 下载 Windows 包 -->
+    <a class="btn" href="../win/google-dino.zip" download>下载 Windows 包</a>
+
+    <!-- 3️⃣ 在线游玩 -->
+    <!-- 如果你想直接在当前页面内运行游戏，把下面的 href 改成 game.html -->
+    <a class="btn" href="google-dino.html">在线游玩</a>
+</div>
+
+</body>
+</html>
